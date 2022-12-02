@@ -11,7 +11,7 @@ let izpisi_datoteko ime_datoteke vsebina =
   output_string chan vsebina;
   close_out chan
 
-let vsebina_datoteke = preberi_datoteko ("resevanje/"^dan^"dan/input.in")
+let vsebina_datoteke = preberi_datoteko ("resevanje/"^dan^"dan/input.txt")
 
 let seznam = String.split_on_char '\n' vsebina_datoteke
 (* ustvari string seznam vseh vrstic iz datoteke "input.in" *)
