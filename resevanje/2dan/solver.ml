@@ -11,7 +11,7 @@ let izpisi_datoteko ime_datoteke vsebina =
   output_string chan vsebina;
   close_out chan
 
-let vsebina_datoteke = preberi_datoteko ("resevanje/"^dan^"dan/input.txt")
+let vsebina_datoteke = preberi_datoteko ("resevanje/"^dan^"dan/day_"^dan^".in")
 let seznam = String.split_on_char '\n' vsebina_datoteke
 (* ustvari string seznam vseh vrstic iz datoteke "input.in" *)
 
@@ -76,7 +76,7 @@ let odgovor1 = sestej_tocke seznam "napačno"
 let odgovor2 = sestej_tocke seznam "prav"
 
 
-let _ = izpisi_datoteko ("resevanje/"^dan^"dan/odgovor1.out") (Int.to_string odgovor1)
-let _ = izpisi_datoteko ("resevanje/"^dan^"dan/odgovor2.out") (Int.to_string odgovor2)
+let _ = izpisi_datoteko ("resevanje/"^dan^"dan/day_"^dan^"_1.out") (Int.to_string odgovor1)
+let _ = izpisi_datoteko ("resevanje/"^dan^"dan/day_"^dan^"_2.out") (Int.to_string odgovor2)
 
 (* če je odgovor v tipu int, popravi odgovor1 -> (Int.to_string odgovor1) *)
