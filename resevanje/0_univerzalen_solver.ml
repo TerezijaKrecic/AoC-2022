@@ -23,8 +23,6 @@ let odgovor1 = naloga1 vsebina_datoteke
 let odgovor2 = naloga2 vsebina_datoteke
 
 (*
-let _ = izpisi_datoteko ("resevanje/"^dan^"dan/day_"^dan^"_1.out") odgovor1
-let _ = izpisi_datoteko ("resevanje/"^dan^"dan/day_"^dan^"_2.out") odgovor2
+let _ = izpisi_datoteko ("resevanje/"^dan^"dan/day_"^dan^"_1.out") (Int.to_string odgovor1)
+let _ = izpisi_datoteko ("resevanje/"^dan^"dan/day_"^dan^"_2.out") (Int.to_string odgovor2)
 *)
-
-(* če je odgovor v tipu int, popravi odgovor1 -> (Int.to_string odgovor1) *)

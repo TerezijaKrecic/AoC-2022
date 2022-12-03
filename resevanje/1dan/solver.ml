@@ -14,7 +14,7 @@ let izpisi_datoteko ime_datoteke vsebina =
 let vsebina_datoteke = preberi_datoteko ("resevanje/"^dan^"dan/day_"^dan^".in")
 
 let seznam = String.split_on_char '\n' vsebina_datoteke
-(* ustvari string seznam vseh vrstic iz datoteke "input.in" *)
+(* ustvari string seznam vseh vrstic iz datoteke "day_1.in" *)
 
 let seznam_vsot =
   let rec loci_sezname seznam_vsot stevec sez = match sez with
